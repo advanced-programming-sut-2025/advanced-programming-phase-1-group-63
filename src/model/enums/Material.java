@@ -6,4 +6,10 @@ public enum Material {
     Iron,
     Gold,
     Iridium;
+
+    int price;
+
+    public Material upgrade() {
+
+    }
 }
