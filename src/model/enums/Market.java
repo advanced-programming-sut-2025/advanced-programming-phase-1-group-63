@@ -3,13 +3,13 @@ package model.enums;
 import model.App;
 import view.AppMenu;
 
-public enum Menu {
+public enum Market {
 
     ;
 
-    private AppMenu menu;
+    private Menu menu;
 
-    Menu(AppMenu menu) {
+    Market(Menu menu) {
         this.menu = menu;
     }
 
