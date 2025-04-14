@@ -1,7 +1,6 @@
 package model;
 
 import model.enums.BackpackType;
-import model.enums.Item;
 
 public class Inventory implements Upgradeable {
     private BackpackType type;

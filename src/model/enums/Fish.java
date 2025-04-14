@@ -1,4 +1,6 @@
 package model.enums;
 
-public enum Fish {
+import model.Item;
+
+public enum Fish implements Item {
 }

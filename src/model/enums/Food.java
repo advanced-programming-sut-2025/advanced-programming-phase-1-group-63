@@ -1,4 +1,6 @@
 package model.enums;
 
-public enum Food {
+import model.Item;
+
+public enum Food implements Item {
 }

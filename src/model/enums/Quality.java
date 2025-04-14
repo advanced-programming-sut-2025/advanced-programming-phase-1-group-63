@@ -1,4 +1,5 @@
 package model.enums;
 
-public enum Store {
+public enum Quality {
+
 }
