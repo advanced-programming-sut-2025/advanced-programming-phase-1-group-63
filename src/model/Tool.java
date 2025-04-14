@@ -3,6 +3,10 @@ package model;
 public class Tool {
     private int requiredEnergy;
 
+    public Tool(int requiredEnergy) {
+        this.requiredEnergy = requiredEnergy;
+    }
+
     public int getRequiredEnergy() {
         return requiredEnergy;
     }
