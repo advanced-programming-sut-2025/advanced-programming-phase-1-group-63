@@ -1,6 +1,6 @@
 package model;
 
-public class Tool {
+public class Tool implements Item {
     private int requiredEnergy;
 
     public Tool(int requiredEnergy) {
