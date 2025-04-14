@@ -10,8 +10,11 @@ public class Player extends User{
     private Skill foraging;
     private Skill fishing;
     private boolean fainted;
+    private final Building house;
+    private Recipe[] recipes;
+    private Mission[] missions;
 
-    public Player(String username, String password, String nickname, String email, Gender gender, Map map, int energy, Skill farming, Skill mining, Skill foraging, Skill fishing, boolean fainted) {
+    public Player(String username, String password, String nickname, String email, Gender gender, Map map, int energy, Skill farming, Skill mining, Skill foraging, Skill fishing, boolean fainted, Building house, Recipe[] recipes, Mission[] missions) {
         super(username, password, nickname, email, gender);
         this.map = map;
         this.energy = energy;
@@ -20,6 +23,9 @@ public class Player extends User{
         this.foraging = foraging;
         this.fishing = fishing;
         this.fainted = fainted;
+        this.house = house;
+        this.recipes = recipes;
+        this.missions = missions;
     }
 
     public Map getMap() {
@@ -76,5 +82,25 @@ public class Player extends User{
 
     public void setFainted(boolean fainted) {
         this.fainted = fainted;
+    }
+
+    public Building getHouse() {
+        return house;
+    }
+
+    public Recipe[] getRecipes() {
+        return recipes;
+    }
+
+    public void setRecipes(Recipe[] recipes) {
+        this.recipes = recipes;
+    }
+
+    public Mission[] getMissions() {
+        return missions;
+    }
+
+    public void setMissions(Mission[] missions) {
+        this.missions = missions;
     }
 }

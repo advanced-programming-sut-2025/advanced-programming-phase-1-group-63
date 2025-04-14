@@ -1,8 +1,9 @@
 package model.enums;
 
 import model.Item;
+import model.Recipe;
 
-public enum Food implements Item {
+public enum Craft implements Item, Recipe {
 
     ;
 
@@ -11,7 +12,7 @@ public enum Food implements Item {
     private Item[] neededItems;
 
 
-    Food(int price, int energy, Item[] neededItems) {
+    Craft(int price, int energy, Item[] neededItems) {
         this.price = price;
         this.energy = energy;
         this.neededItems = neededItems;
