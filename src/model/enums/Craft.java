@@ -1,9 +1,8 @@
 package model.enums;
 
 import model.Item;
-import model.Recipe;
 
-public enum Craft implements Item, Recipe {
+public enum Craft implements Item {
 
     ;
 

@@ -12,7 +12,7 @@ public enum Animal {
     private boolean feeded;
     private final ProductType productType;
 
-    Animal(model.enums.LifePlace lifePlace, int friendshipRate, Cage animalCage, ProductType productType) {
+    Animal(LifePlace lifePlace, int friendshipRate, Cage animalCage, ProductType productType) {
         LifePlace = lifePlace;
         this.friendshipRate = friendshipRate;
         this.animalCage = animalCage;

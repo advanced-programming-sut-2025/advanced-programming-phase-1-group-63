@@ -1,5 +1,7 @@
 package model;
 
+import model.enums.Item;
+
 public class Mission {
     private final int unit;
     private final Item item;
