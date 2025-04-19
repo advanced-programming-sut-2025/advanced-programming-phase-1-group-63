@@ -12,7 +12,7 @@ public enum Season {
         this.seasonNumber = seasonNumber;
     }
 
-    public Season nextNumSeason(int number) {
+    public Season nextSeason() {
 
     }
 }

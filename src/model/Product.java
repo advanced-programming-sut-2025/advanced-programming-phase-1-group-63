@@ -3,7 +3,7 @@ package model;
 import model.enums.ProductType;
 import model.enums.Quality;
 
-public class Product implements Item {
+public class Product implements Itemable {
     private final ProductType type;
     private final Quality quality;
     private final int price;

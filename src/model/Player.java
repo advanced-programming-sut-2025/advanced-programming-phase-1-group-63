@@ -1,5 +1,7 @@
 package model;
 
+import model.enums.Craft;
+import model.enums.Food;
 import model.enums.Gender;
 
 public class Player extends User{
@@ -11,10 +13,11 @@ public class Player extends User{
     private Skill fishing;
     private boolean fainted;
     private final Building house;
-    private Recipe[] recipes;
+    private Craft[] crafts;
+    private Food[] foods;
     private Mission[] missions;
 
-    public Player(String username, String password, String nickname, String email, Gender gender, Map map, int energy, Skill farming, Skill mining, Skill foraging, Skill fishing, boolean fainted, Building house, Recipe[] recipes, Mission[] missions) {
+    public Player(String username, String password, String nickname, String email, Gender gender, Map map, int energy, Skill farming, Skill mining, Skill foraging, Skill fishing, boolean fainted, Building house, Craft[] crafts, Food[] foods, Mission[] missions) {
         super(username, password, nickname, email, gender);
         this.map = map;
         this.energy = energy;
@@ -24,7 +27,8 @@ public class Player extends User{
         this.fishing = fishing;
         this.fainted = fainted;
         this.house = house;
-        this.recipes = recipes;
+        this.crafts = crafts;
+        this.foods = foods;
         this.missions = missions;
     }
 
@@ -88,12 +92,20 @@ public class Player extends User{
         return house;
     }
 
-    public Recipe[] getRecipes() {
-        return recipes;
+    public Craft[] getCrafts() {
+        return crafts;
     }
 
-    public void setRecipes(Recipe[] recipes) {
-        this.recipes = recipes;
+    public void setCrafts(Craft[] crafts) {
+        this.crafts = crafts;
+    }
+
+    public Food[] getFoods() {
+        return foods;
+    }
+
+    public void setFoods(Food[] foods) {
+        this.foods = foods;
     }
 
     public Mission[] getMissions() {

@@ -1,5 +1,6 @@
 package model;
 
+import model.enums.Item;
 import model.enums.TradeType;
 
 public class ExchangeTrade extends Trade {
