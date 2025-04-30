@@ -2,17 +2,21 @@ package model;
 
 import model.enums.Menu;
 
+import java.awt.*;
 import java.util.ArrayList;
 
 public class App {
-    private ArrayList<User> users;
-    private User loggedInUser;
-    private Game openedGame;
-    private Menu currentMenu;
+    private final String[] questions;
+    private ArrayList<User> users = new ArrayList<>();
+    private User loggedInUser = null;
+    private Game openedGame = null;
+    private Menu currentMenu = Menu.LOGIN;
     private static App instance;
 
-    private App() {
-
+    public App() {
+        String[] questions = new String[20];
+        // TODO
+        this.questions = questions;
     }
 
     public static App getInstance() {
