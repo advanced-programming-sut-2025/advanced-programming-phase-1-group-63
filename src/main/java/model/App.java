@@ -7,6 +7,7 @@ import java.util.ArrayList;
 
 public class App {
     private final String[] questions;
+    private final model.Map[] maps;
     private ArrayList<User> users = new ArrayList<>();
     private User loggedInUser = null;
     private Game openedGame = null;
@@ -15,8 +16,10 @@ public class App {
 
     public App() {
         String[] questions = new String[20];
+        model.Map[] maps = new model.Map[3];
         // TODO
         this.questions = questions;
+        this.maps = maps;
     }
 
     public static App getInstance() {

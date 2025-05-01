@@ -3,17 +3,15 @@ package main.java.model.regexes;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public enum LogInMenuCommands implements Command {
+public enum LoginMenuCommands implements Command {
     REGISTER("register -u (?<username>\\S+) -p (?<password>\\S+) (?<passwordConfirm>\\S+) " +
             "-n (?<nickname>\\S+) -e (?<email>\\S+) -g (?<gender>\\S+)"),
-    PICK_QUESTION("pick question -q (?<number>\\S+) -a (?<answer>.+) -c (?<answerConfirm>.+)"),
     LOGIN("login -u (?<username>\\S+) -p (?<password>\\S+) (?<stayLoggedIn>-stay-logged-in)?"),
-    FORGOT_PASSWORD("forgot password -u (?<username>\\S+)"),
-    ANSWER("answer -a (?<answer>\\S+)");
+    FORGOT_PASSWORD("forgot password -u (?<username>\\S+)");
 
     private final String regex;
 
-    LogInMenuCommands(String regex) {
+    LoginMenuCommands(String regex) {
         this.regex = regex;
     }
 

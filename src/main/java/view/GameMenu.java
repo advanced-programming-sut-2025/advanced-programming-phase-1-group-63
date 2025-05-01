@@ -7,7 +7,7 @@ public class GameMenu implements AppMenu {
     GameMenuController controller = new GameMenuController();
 
     @Override
-    public void check(App app, String command) {
+    public Result check(App app, String command) {
 
     }
 }

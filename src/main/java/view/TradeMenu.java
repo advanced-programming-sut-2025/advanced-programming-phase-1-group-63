@@ -7,7 +7,7 @@ public class TradeMenu implements AppMenu {
     TradeMenuController controller = new TradeMenuController();
 
     @Override
-    public void check(App app, String command) {
+    public Result check(App app, String command) {
 
     }
 }
