@@ -7,8 +7,10 @@ import java.util.ArrayList;
 public class App {
     private final String[] questions;
     private final Map[] maps;
+    private final Map mainMap;
     private ArrayList<User> users = new ArrayList<>();
     private User loggedInUser = null;
+    private boolean stayLoggedIn = false;
     private Game openedGame = null;
     private Menu currentMenu = Menu.LOGIN;
     private static App instance;
@@ -16,15 +18,33 @@ public class App {
     public App() {
         String[] questions = new String[20];
         Map[] maps = new Map[3];
+        Map mainMap = new Map(100, 100);
         // TODO
         this.questions = questions;
         this.maps = maps;
+        this.mainMap = mainMap;
     }
 
     public static App getInstance() {
         if (instance == null)
             instance = new App();
         return instance;
+    }
+
+    public String[] getQuestions() {
+        return questions;
+    }
+
+    public String getQuestionsString() {
+        // TODO
+    }
+
+    public Map[] getMaps() {
+        return maps;
+    }
+
+    public Map getMainMap() {
+        return mainMap;
     }
 
     public ArrayList<User> getUsers() {
@@ -39,12 +59,24 @@ public class App {
         users.add(user);
     }
 
+    public void setAUser(int index, User user) {
+        users.set(index, user);
+    }
+
     public User getLoggedInUser() {
         return loggedInUser;
     }
 
     public void setLoggedInUser(User loggedInUser) {
         this.loggedInUser = loggedInUser;
+    }
+
+    public boolean isStayLoggedIn() {
+        return stayLoggedIn;
+    }
+
+    public void setStayLoggedIn(boolean stayLoggedIn) {
+        this.stayLoggedIn = stayLoggedIn;
     }
 
     public Game getOpenedGame() {

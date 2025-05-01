@@ -17,10 +17,9 @@ public class LoginMenu implements AppMenu {
             return controller.register(app, matcher.group("username"), matcher.group("password"), matcher.group("passwordConfirm"),
                     matcher.group("nickname"), matcher.group("email"), matcher.group("gender"));
         if ((matcher = LoginMenuCommands.LOGIN.getMatcher(command)) != null)
-            return controller.login(app, matcher.group("username"), matcher.group("password"));
+            return controller.login(app, matcher.group("username"), matcher.group("password"), matcher.group("stayLoggedIn"));
         if ((matcher = LoginMenuCommands.FORGOT_PASSWORD.getMatcher(command)) != null)
             return controller.forgotPassword(app, matcher.group("username"));
-        else
-            return new Result(false, "Invalid command");
+        return new Result(false, "Invalid command");
     }
 }

@@ -3,23 +3,28 @@ package main.java.model;
 import main.java.model.enums.Gender;
 
 public class User {
+    public static int number = 0;
+    private final int ID;
     private String username;
     private String password;
     private String nickname;
     private final String email;
     private final Gender gender;
-    private final String question;
-    private final String answer;
+    private String question = null;
+    private String answer = null;
     private Game currentGame = null;
 
-    public User(String username, String password, String nickname, String email, Gender gender, String question, String answer) {
+    public User(String username, String password, String nickname, String email, Gender gender) {
+        this.ID = ++number;
         this.username = username;
         this.password = password;
         this.nickname = nickname;
         this.email = email;
         this.gender = gender;
-        this.question = question;
-        this.answer = answer;
+    }
+
+    public int getID() {
+        return ID;
     }
 
     public String getUsername() {
@@ -58,8 +63,18 @@ public class User {
         return question;
     }
 
+    public void setQuestion(String question) {
+        if (this.question == null)
+            this.question = question;
+    }
+
     public String getAnswer() {
         return answer;
+    }
+
+    public void setAnswer(String answer) {
+        if (this.answer == null)
+            this.answer = answer;
     }
 
     public Game getCurrentGame() {

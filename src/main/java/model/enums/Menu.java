@@ -5,8 +5,10 @@ import main.java.view.*;
 
 public enum Menu {
     LOGIN(new LoginMenu()),
+    PASSWORD_CONFIRM(new PasswordConfirmMenu()),
     PICK_QUESTION(new PickQuestionMenu()),
     ANSWER(new AnswerMenu()),
+    PASSWORD(new PasswordMenu()),
     MAIN(new MainMenu()),
     SELECT_MAP(new SelectMapMenu()),
     PROFILE(new ProfileMenu()),
