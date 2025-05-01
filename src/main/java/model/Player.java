@@ -4,32 +4,22 @@ import main.java.model.enums.Craft;
 import main.java.model.enums.Food;
 import main.java.model.enums.Gender;
 
-public class Player extends User{
-    private Map map;
-    private int energy;
-    private Skill farming;
-    private Skill mining;
-    private Skill foraging;
-    private Skill fishing;
-    private boolean fainted;
-    private final Building house;
-    private Craft[] crafts;
-    private Food[] foods;
-    private Mission[] missions;
+import java.util.ArrayList;
 
-    public Player(User user, Map map, int energy, Skill farming, Skill mining, Skill foraging, Skill fishing, boolean fainted, Building house, Craft[] crafts, Food[] foods, Mission[] missions) {
-        super(user.getUsername(), user.getPassword(), user.getNickname(), user.getEmail(), user.getGender(), user.getQuestion(), user.getAnswer());
-        this.map = map;
-        this.energy = energy;
-        this.farming = farming;
-        this.mining = mining;
-        this.foraging = foraging;
-        this.fishing = fishing;
-        this.fainted = fainted;
-        this.house = house;
-        this.crafts = crafts;
-        this.foods = foods;
-        this.missions = missions;
+public class Player extends User{
+    private Map map = null;
+    private int energy = 200;
+    private Skill farming = new Skill(0, 0);
+    private Skill mining = new Skill(0, 0);
+    private Skill foraging = new Skill(0, 0);
+    private Skill fishing = new Skill(0, 0);
+    private boolean fainted = false;
+    private ArrayList<Craft> crafts = new ArrayList<>();
+    private ArrayList<Food> foods = new ArrayList<>();
+    private ArrayList<Mission> missions = new ArrayList<>();
+
+    public Player(User user) {
+        super(user.getUsername(), user.getPassword(), user.getNickname(), user.getEmail(), user.getGender());
     }
 
     public Map getMap() {

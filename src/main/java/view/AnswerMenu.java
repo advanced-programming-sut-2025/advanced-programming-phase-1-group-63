@@ -14,7 +14,7 @@ public class AnswerMenu implements AppMenu {
     public Result check(App app, String command) {
         Matcher matcher;
         if ((matcher = AnswerMenuCommands.ANSWER.getMatcher(command)) != null)
-            return controller.answer(app, matcher.group("username"));
+            return controller.answer(app, matcher.group("answer"));
         else
             return new Result(false, "Invalid command");
     }

@@ -5,14 +5,17 @@ import main.java.view.*;
 
 public enum Menu {
     LOGIN(new LoginMenu()),
+    PASSWORD_CONFIRM(new PasswordConfirmMenu()),
     PICK_QUESTION(new PickQuestionMenu()),
     ANSWER(new AnswerMenu()),
+    PASSWORD(new PasswordMenu()),
     MAIN(new MainMenu()),
     SELECT_MAP(new SelectMapMenu()),
     PROFILE(new ProfileMenu()),
     GAME(new GameMenu()),
     STORE(new StoreMenu()),
-    TRADE(new TradeMenu());
+    TRADE(new TradeMenu()),
+    EXIT(new ExitMenu());
 
     private AppMenu menu;
 
