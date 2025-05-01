@@ -6,7 +6,7 @@ import main.java.model.User;
 import main.java.model.enums.Gender;
 
 public class GeneralAppController {
-    protected Result validateUsername(App app, String username) {
+    protected Result validateUsername(App app, String username) { // same user ... (loggedIn == same) ... pattern
     }
 
     protected Result validateEmail(String email) {
@@ -31,5 +31,8 @@ public class GeneralAppController {
     }
 
     protected Integer changeStringToInteger(String numberString) {
+    }
+
+    protected int findIndexByUser(App app, User user) {
     }
 }

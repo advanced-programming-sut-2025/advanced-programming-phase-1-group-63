@@ -8,11 +8,13 @@ public class User {
     private String username;
     private String password;
     private String nickname;
-    private final String email;
+    private String email;
     private final Gender gender;
     private String question = null;
     private String answer = null;
+    private int gameNumber = 0;
     private Game currentGame = null;
+    private int bestGameIncome = 0;
 
     public User(String username, String password, String nickname, String email, Gender gender) {
         this.ID = ++number;
@@ -55,6 +57,10 @@ public class User {
         return email;
     }
 
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     public Gender getGender() {
         return gender;
     }
@@ -77,11 +83,35 @@ public class User {
             this.answer = answer;
     }
 
+    public int getGameNumber() {
+        return gameNumber;
+    }
+
+    public void setGameNumber(int gameNumber) {
+        this.gameNumber = gameNumber;
+    }
+
     public Game getCurrentGame() {
         return currentGame;
     }
 
     public void setCurrentGame(Game currentGame) {
         this.currentGame = currentGame;
+    }
+
+    public int getBestGameIncome() {
+        return bestGameIncome;
+    }
+
+    public void setBestGameIncome(int bestGameIncome) {
+        this.bestGameIncome = bestGameIncome;
+    }
+
+    @Override
+    public String toString() {
+        return "  ● Username : " + username +
+                "  ● Nickname : " + nickname +
+                "  ● Highest money earned in a game : " + bestGameIncome +
+                "  ● Games number : " + gameNumber;
     }
 }
