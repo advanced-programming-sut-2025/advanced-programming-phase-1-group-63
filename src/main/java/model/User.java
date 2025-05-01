@@ -8,14 +8,18 @@ public class User {
     private String nickname;
     private final String email;
     private final Gender gender;
+    private final int questionNumber;
+    private final String answer;
     private Game currentGame = null;
 
-    public User(String username, String password, String nickname, String email, Gender gender) {
+    public User(String username, String password, String nickname, String email, Gender gender, int questionNumber, String answer) {
         this.username = username;
         this.password = password;
         this.nickname = nickname;
         this.email = email;
         this.gender = gender;
+        this.questionNumber = questionNumber;
+        this.answer = answer;
     }
 
     public String getUsername() {
@@ -48,6 +52,14 @@ public class User {
 
     public Gender getGender() {
         return gender;
+    }
+
+    public int getQuestionNumber() {
+        return questionNumber;
+    }
+
+    public String getAnswer() {
+        return answer;
     }
 
     public Game getCurrentGame() {

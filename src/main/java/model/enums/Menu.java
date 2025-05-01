@@ -4,8 +4,12 @@ import model.App;
 import view.AppMenu;
 
 public enum Menu {
-
-    ;
+    LOGIN(new LogInMenu()),
+    MAIN(new MainMenu()),
+    PROFILE(new ProfileMenu()),
+    GAME(new GameMenu()),
+    STORE(new StoreMenu()),
+    TRADE(new TradeMenu());
 
     private AppMenu menu;
 

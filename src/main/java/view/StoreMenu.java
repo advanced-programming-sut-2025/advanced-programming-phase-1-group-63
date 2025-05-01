@@ -7,7 +7,7 @@ public class StoreMenu implements AppMenu {
     StoreMenuController controller = new StoreMenuController();
 
     @Override
-    public void check(App app, String command) {
+    public Result check(App app, String command) {
 
     }
 }
