@@ -3,8 +3,31 @@ package main.java.controller;
 import main.java.model.App;
 import main.java.model.Result;
 import main.java.model.User;
+import main.java.model.enums.Menu;
 
 public class ProfileMenuController extends GeneralAppController {
+    public Result menuEnter(App app, String menuString) {
+        Menu menu = changeStringToMenu(menuString);
+        if (menu == null)
+            return new Result(false, "menu doesn't exist!");
+        if (menu.equals(Menu.PROFILE))
+            return new Result(false, "You are already in profile menu!");
+        if (menu.equals(Menu.MAIN)) {
+            app.setCurrentMenu(menu);
+            return new Result(true, "Menu changed successfully. You are now in main menu!");
+        }
+        return new Result(false, "Accessing this menu directly from the current menu is not allowed!");
+    }
+
+    public Result menuExit(App app) {
+        app.setCurrentMenu(Menu.MAIN);
+        return new Result(true, "Menu exited successfully. You are now in main menu!");
+    }
+
+    public Result showCurrentMenu() {
+        return new Result(true, "You are in profile menu");
+    }
+
     public Result changeUsername(App app, String username) {
         User user = app.getLoggedInUser();
         Result result = validateUsername(app, username);

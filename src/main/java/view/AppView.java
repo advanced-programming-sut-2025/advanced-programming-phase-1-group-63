@@ -1,7 +1,8 @@
 package main.java.view;
 
 import main.java.model.App;
-import main.java.model.*;
+import main.java.model.enums.Menu;
+
 import java.util.Scanner;
 
 public class AppView {
@@ -11,6 +12,6 @@ public class AppView {
         do {
             String command = scanner.nextLine();
             app.getCurrentMenu().check(app, command);
-        } while (!app.getCurrentMenu().equals(Menu.Exit));
+        } while (!app.getCurrentMenu().equals(Menu.EXIT));
     }
 }

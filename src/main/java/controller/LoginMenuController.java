@@ -7,6 +7,24 @@ import main.java.model.enums.Gender;
 import main.java.model.enums.Menu;
 
 public class LoginMenuController extends GeneralAppController {
+    public Result menuEnter(App app, String menuString) {
+        Menu menu = changeStringToMenu(menuString);
+        if (menu == null)
+            return new Result(false, "menu doesn't exist!");
+        if (menu.equals(Menu.LOGIN))
+            return new Result(false, "You are already in login menu!");
+        return new Result(false, "You must login first!");
+    }
+
+    public Result menuExit(App app) {
+        app.setCurrentMenu(Menu.EXIT);
+        return new Result(true, "");
+    }
+
+    public Result showCurrentMenu() {
+        return new Result(true, "You are in login menu");
+    }
+
     public Result register(App app, String username, String password, String passwordConfirm, String nickname, String email, String genderString) {
         Result result;
         if (!(result = validateUsername(app, username)).isSuccessful())

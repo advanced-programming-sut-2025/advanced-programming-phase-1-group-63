@@ -3,6 +3,7 @@ package main.java.view;
 import main.java.controller.LoginMenuController;
 import main.java.model.App;
 import main.java.model.Result;
+import main.java.model.regexes.GeneralCommands;
 import main.java.model.regexes.LoginMenuCommands;
 
 import java.util.regex.Matcher;
@@ -13,6 +14,12 @@ public class LoginMenu implements AppMenu {
     @Override
     public Result check(App app, String command) {
         Matcher matcher;
+        if ((matcher = GeneralCommands.MENU_ENTER.getMatcher(command)) != null)
+            return controller.menuEnter(app, matcher.group("menu"));
+        if (GeneralCommands.MENU_EXIT.getMatcher(command) != null)
+            return controller.menuExit(app);
+        if (GeneralCommands.SHOW_CURRENT_MENU.getMatcher(command) != null)
+            return controller.showCurrentMenu();
         if ((matcher = LoginMenuCommands.REGISTER.getMatcher(command)) != null)
             return controller.register(app, matcher.group("username"), matcher.group("password"), matcher.group("passwordConfirm"),
                     matcher.group("nickname"), matcher.group("email"), matcher.group("gender"));

@@ -4,6 +4,7 @@ import main.java.model.App;
 import main.java.model.Result;
 import main.java.model.User;
 import main.java.model.enums.Gender;
+import main.java.model.enums.Menu;
 
 public class GeneralAppController {
     protected Result validateUsername(App app, String username) { // same user ... (loggedIn == same) ... pattern
@@ -34,5 +35,9 @@ public class GeneralAppController {
     }
 
     protected int findIndexByUser(App app, User user) {
+    }
+
+    protected Menu changeStringToMenu(String menuString) {
+        return null;
     }
 }
