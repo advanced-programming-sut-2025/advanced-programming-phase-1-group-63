@@ -1,4 +1,4 @@
-package model;
+package main.java.model;
 
 public class Game {
     private final int numberOfPlayers;

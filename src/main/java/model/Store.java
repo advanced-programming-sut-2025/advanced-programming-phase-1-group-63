@@ -1,4 +1,4 @@
-package model;
+package main.java.model;
 
 public class Store extends Building {
     public Store(int startX, int startY, int width, int height) {

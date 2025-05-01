@@ -1,7 +1,10 @@
 package main.java.controller;
 
-public class SelectMapMenuController extends controller.GenerallAppController {
-    public Result mapSelect(model.App app, String number) {
+import main.java.model.App;
+import main.java.model.Result;
+
+public class SelectMapMenuController extends GeneralAppController {
+    public Result mapSelect(App app, String number) {
         return null;
     }
 }

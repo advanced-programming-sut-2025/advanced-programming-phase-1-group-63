@@ -1,11 +1,14 @@
-package model.enums;
+package main.java.model.enums;
 
-import model.App;
-import view.AppMenu;
+import main.java.model.App;
+import main.java.view.*;
 
 public enum Menu {
-    LOGIN(new LogInMenu()),
+    LOGIN(new LoginMenu()),
+    PICK_QUESTION(new PickQuestionMenu()),
+    ANSWER(new AnswerMenu()),
     MAIN(new MainMenu()),
+    SELECT_MAP(new SelectMapMenu()),
     PROFILE(new ProfileMenu()),
     GAME(new GameMenu()),
     STORE(new StoreMenu()),

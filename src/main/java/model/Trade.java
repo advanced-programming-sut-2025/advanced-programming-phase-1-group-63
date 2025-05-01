@@ -1,7 +1,7 @@
-package model;
+package main.java.model;
 
-import model.enums.TradeTarget;
-import model.enums.TradeType;
+import main.java.model.enums.Item;
+import main.java.model.enums.TradeType;
 
 public class Trade {
     private final User firstUser;

@@ -1,12 +1,12 @@
-package controller;
+package main.java.controller;
 
-import model.Item;
-import model.Result;
-import model.Trade;
-import model.User;
-import model.enums.TradeType;
+import main.java.model.Result;
+import main.java.model.Trade;
+import main.java.model.User;
+import main.java.model.enums.Item;
+import main.java.model.enums.TradeType;
 
-public class TradeMenuController extends GenerallAppController {
+public class TradeMenuController extends GeneralAppController {
     public Result trade (User firstUser, User secondUser, TradeType type, Item item, int amount, int price) {
 
     }

@@ -1,4 +1,4 @@
-package model.enums;
+package main.java.model.enums;
 
 import model.Item;
 import model.Itemable;

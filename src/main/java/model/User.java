@@ -1,6 +1,6 @@
-package model;
+package main.java.model;
 
-import model.enums.Gender;
+import main.java.model.enums.Gender;
 
 public class User {
     private String username;

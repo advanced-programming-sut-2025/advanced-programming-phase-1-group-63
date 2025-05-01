@@ -1,6 +1,6 @@
-package model;
+package main.java.model;
 
-import model.enums.ToolMaterial;
+import main.java.model.enums.ToolMaterial;
 
 public class WateringCan extends Tool implements Upgradeable {
     private ToolMaterial material;

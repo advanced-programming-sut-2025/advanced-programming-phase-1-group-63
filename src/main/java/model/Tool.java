@@ -1,4 +1,4 @@
-package model;
+package main.java.model;
 
 public class Tool implements Itemable {
     private int requiredEnergy;

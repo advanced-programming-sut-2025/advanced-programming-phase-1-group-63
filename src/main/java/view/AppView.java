@@ -1,8 +1,7 @@
-package view;
+package main.java.view;
 
-import model.App;
-import model.enums.Menu;
-
+import main.java.model.App;
+import main.java.model.*;
 import java.util.Scanner;
 
 public class AppView {

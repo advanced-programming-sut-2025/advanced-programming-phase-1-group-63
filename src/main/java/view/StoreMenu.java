@@ -1,7 +1,8 @@
-package view;
+package main.java.view;
 
-import controller.StoreMenuController;
-import model.App;
+import main.java.controller.StoreMenuController;
+import main.java.model.App;
+import main.java.model.Result;
 
 public class StoreMenu implements AppMenu {
     StoreMenuController controller = new StoreMenuController();

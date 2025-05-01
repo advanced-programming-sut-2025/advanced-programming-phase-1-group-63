@@ -1,13 +1,15 @@
-package controller;
+package main.java.controller;
 
-public class MainMenuController extends GenerallAppController {
-    public Result logout(model.App app) {
-        return null;
+import main.java.model.App;
+import main.java.model.Result;
+
+public class MainMenuController extends GeneralAppController {
+    public Result logout(App app) {
     }
 
-    public Result createGame(model.App app, String username1, String username2, String username3) {
+    public Result createGame(App app, String username1, String username2, String username3) {
     }
 
-    public Result loadGame(model.App app) {
+    public Result loadGame(App app) {
     }
 }

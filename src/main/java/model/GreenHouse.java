@@ -1,4 +1,4 @@
-package model;
+package main.java.model;
 
 public class GreenHouse extends Building {
     public GreenHouse(int startX, int startY, int width, int height) {
