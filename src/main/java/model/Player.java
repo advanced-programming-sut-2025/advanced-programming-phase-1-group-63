@@ -1,4 +1,4 @@
-package model;
+package main.java.model;
 
 import model.enums.Craft;
 import model.enums.Food;

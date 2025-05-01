@@ -1,12 +1,14 @@
-package view;
+package main.java.view;
 
+import main.java.controller.LoginMenuController;
+import main.java.model.App;
+import main.java.model.Result;
 import main.java.model.regexes.LoginMenuCommands;
-import model.App;
 
 import java.util.regex.Matcher;
 
 public class LoginMenu implements AppMenu {
-    controller.LoginMenuController controller = new controller.LoginMenuController();
+    LoginMenuController controller = new LoginMenuController();
 
     @Override
     public Result check(App app, String command) {

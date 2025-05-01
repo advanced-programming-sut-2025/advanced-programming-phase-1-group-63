@@ -1,4 +1,4 @@
-package model;
+package main.java.model;
 
 import model.enums.BackpackType;
 import model.enums.Item;

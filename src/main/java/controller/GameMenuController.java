@@ -1,4 +1,4 @@
-package controller;
+package main.java.controller;
 
-public class GameMenuController extends GenerallAppController {
+public class GameMenuController extends GeneralAppController {
 }

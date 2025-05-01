@@ -1,4 +1,4 @@
-package model;
+package main.java.model;
 
 import model.enums.Element;
 import java.util.ArrayList;

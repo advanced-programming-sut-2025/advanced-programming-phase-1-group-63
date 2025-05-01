@@ -1,7 +1,9 @@
-package view;
+package main.java.view;
 
-import controller.GameMenuController;
-import model.App;
+
+import main.java.controller.GameMenuController;
+import main.java.model.App;
+import main.java.model.Result;
 
 public class GameMenu implements AppMenu {
     GameMenuController controller = new GameMenuController();

@@ -1,9 +1,10 @@
-package view;
+package main.java.view;
 
-import controller.ProfileMenuController;
-import main.java.model.regexes.LoginMenuCommands;
+
+import main.java.controller.ProfileMenuController;
+import main.java.model.App;
+import main.java.model.Result;
 import main.java.model.regexes.ProfileMenuCommands;
-import model.App;
 
 import java.util.regex.Matcher;
 

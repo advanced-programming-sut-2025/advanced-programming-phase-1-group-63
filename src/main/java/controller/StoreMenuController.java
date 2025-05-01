@@ -1,4 +1,4 @@
-package controller;
+package main.java.controller;
 
-public class StoreMenuController extends GenerallAppController {
+public class StoreMenuController extends GeneralAppController {
 }

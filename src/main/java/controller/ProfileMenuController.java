@@ -1,18 +1,21 @@
-package controller;
+package main.java.controller;
 
-public class ProfileMenuController extends GenerallAppController {
-    public Result changeUsername(model.App app, String username) {
+import main.java.model.App;
+import main.java.model.Result;
+
+public class ProfileMenuController extends GeneralAppController {
+    public Result changeUsername(App app, String username) {
     }
 
-    public Result changeNickname(model.App app, String nickname) {
+    public Result changeNickname(App app, String nickname) {
     }
 
-    public Result changeEmail(model.App app, String email) {
+    public Result changeEmail(App app, String email) {
     }
 
-    public Result changePassword(model.App app, String newPassword, String oldPassword) {
+    public Result changePassword(App app, String newPassword, String oldPassword) {
     }
 
-    public Result userInfo(model.App app) {
+    public model.Result userInfo(model.App app) {
     }
 }

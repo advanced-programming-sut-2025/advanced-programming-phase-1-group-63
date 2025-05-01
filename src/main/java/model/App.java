@@ -1,13 +1,12 @@
-package model;
+package main.java.model;
 
-import model.enums.Menu;
+import main.java.model.enums.Menu;
 
-import java.awt.*;
 import java.util.ArrayList;
 
 public class App {
     private final String[] questions;
-    private final model.Map[] maps;
+    private final Map[] maps;
     private ArrayList<User> users = new ArrayList<>();
     private User loggedInUser = null;
     private Game openedGame = null;
@@ -16,7 +15,7 @@ public class App {
 
     public App() {
         String[] questions = new String[20];
-        model.Map[] maps = new model.Map[3];
+        Map[] maps = new Map[3];
         // TODO
         this.questions = questions;
         this.maps = maps;

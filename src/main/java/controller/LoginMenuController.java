@@ -1,13 +1,15 @@
-package controller;
+package main.java.controller;
 
-public class LoginMenuController extends GenerallAppController {
-    public Result register(model.App app, String username, String password, String passwordConfirm, String nickname, String email, String gender) {
+import main.java.model.App;
+import main.java.model.Result;
+
+public class LoginMenuController extends GeneralAppController {
+    public Result register(App app, String username, String password, String passwordConfirm, String nickname, String email, String gender) {
     }
 
-    public Result login(model.App app, String username, String password) {
-        return null;
+    public Result login(App app, String username, String password) {
     }
 
-    public Result forgotPassword(model.App app, String username) {
+    public Result forgotPassword(App app, String username) {
     }
 }

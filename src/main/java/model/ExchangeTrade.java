@@ -1,4 +1,4 @@
-package model;
+package main.java.model;
 
 import model.enums.Item;
 import model.enums.TradeType;

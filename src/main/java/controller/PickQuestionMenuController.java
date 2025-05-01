@@ -1,6 +1,9 @@
 package main.java.controller;
 
-public class PickQuestionMenuController extends controller.GenerallAppController {
-    public Result pickQuestion(model.App app, String number, String answer, String answerConfirm) {
+import main.java.model.App;
+import main.java.model.Result;
+
+public class PickQuestionMenuController extends GeneralAppController {
+    public Result pickQuestion(App app, String number, String answer, String answerConfirm) {
     }
 }
