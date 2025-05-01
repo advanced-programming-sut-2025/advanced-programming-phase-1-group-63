@@ -1,8 +1,8 @@
 package main.java.model;
 
-import model.enums.Craft;
-import model.enums.Food;
-import model.enums.Gender;
+import main.java.model.enums.Craft;
+import main.java.model.enums.Food;
+import main.java.model.enums.Gender;
 
 public class Player extends User{
     private Map map;
@@ -17,8 +17,8 @@ public class Player extends User{
     private Food[] foods;
     private Mission[] missions;
 
-    public Player(String username, String password, String nickname, String email, Gender gender, Map map, int energy, Skill farming, Skill mining, Skill foraging, Skill fishing, boolean fainted, Building house, Craft[] crafts, Food[] foods, Mission[] missions) {
-        super(username, password, nickname, email, gender);
+    public Player(User user, Map map, int energy, Skill farming, Skill mining, Skill foraging, Skill fishing, boolean fainted, Building house, Craft[] crafts, Food[] foods, Mission[] missions) {
+        super(user.getUsername(), user.getPassword(), user.getNickname(), user.getEmail(), user.getGender(), user.getQuestion(), user.getAnswer());
         this.map = map;
         this.energy = energy;
         this.farming = farming;
