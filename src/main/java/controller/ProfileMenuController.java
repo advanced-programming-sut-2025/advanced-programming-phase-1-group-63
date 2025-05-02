@@ -40,7 +40,7 @@ public class ProfileMenuController extends GeneralAppController {
 
     public Result changeNickname(App app, String nickname) {
         User user = app.getLoggedInUser();
-        Result result = validateNickname(nickname);
+        Result result = validateNickname(app, nickname);
         if (!result.isSuccessful())
             return result;
         user.setNickname(nickname);
@@ -50,7 +50,7 @@ public class ProfileMenuController extends GeneralAppController {
 
     public Result changeEmail(App app, String email) {
         User user = app.getLoggedInUser();
-        Result result = validateEmail(email);
+        Result result = validateEmail(app, email);
         if (!result.isSuccessful())
             return result;
         user.setEmail(email);
@@ -62,7 +62,7 @@ public class ProfileMenuController extends GeneralAppController {
         User user = app.getLoggedInUser();
         if (!oldPassword.equals(user.getPassword()))
             return new Result(false, "Old password is incorrect!");
-        Result result = validatePassword(newPassword);
+        Result result = validatePassword(app, newPassword);
         if (!result.isSuccessful())
             return result;
         if (newPassword.equals(oldPassword))
