@@ -7,20 +7,15 @@ public enum GeneralCommands implements Command {
     MENU_ENTER("menu enter (?<menu>\\S+)"),
     MENU_EXIT("menu exit"),
     SHOW_CURRENT_MENU("show current menu"),
-
-    MENU("Login|main|profile|game"),
     USERNAME("[a-zA-Z0-9-]+"),
-    PASSWORD("[a-zA-Z0-9?<>{}()[\\]\\\\\\/|,\"';:+*=&\\^%$#!]"),
-    PASSWORD_RANDOM("random"),
+    PASSWORD("[a-zA-Z0-9?<>{}()[\\]\\\\\\/|,\"';:+*=&\\^%$#!]+"),
     PASSWORD_LENGTH("\\S{8,}"),
     PASSWORD_LOWERCASE("(?=.+[a-z])"),
     PASSWORD_UPPERCASE("(?=.+[A-Z])"),
     PASSWORD_NUMBER("(?=.+[0-9])"),
     PASSWORD_SIGN("(?=.+[?<>{}()[\\]\\\\\\/|,\"';:+*=&\\^%$#!])"),
-    EMAIL("(?<ID>\\S+)@(?<domain>\\S+).(?<TLD>\\S+)"),
-    EMAIL_ID("(?=[a-zA-Z0-9])(\\.?[a-zA-Z0-9_-])+(?<=[a-zA-Z0-9])"),
-    EMAIL_DOMAIN("(?=[a-zA-Z0-9])[a-zA-Z0-9-]+(?<=[a-zA-Z0-9])"),
-    EMAIL_TLD("[a-zA-Z]{2,}"),
+    EMAIL("(?=[a-zA-Z0-9])(\\.?[a-zA-Z0-9_-])+(?<=[a-zA-Z0-9])@(?=[a-zA-Z0-9])[a-zA-Z0-9-]+(?<=[a-zA-Z0-9]).[a-zA-Z]{2,}"),
+    NICKNAME("[a-zA-Z0-9-]+"),
     INTEGER("-?[0-9]+");
 
     private final String regex;

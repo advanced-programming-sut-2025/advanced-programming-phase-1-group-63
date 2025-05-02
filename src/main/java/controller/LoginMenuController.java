@@ -29,16 +29,16 @@ public class LoginMenuController extends GeneralAppController {
         Result result;
         if (!(result = validateUsername(app, username)).isSuccessful())
             return result;
-        if (!(result = validateEmail(email)).isSuccessful())
+        if (!(result = validateEmail(app, email)).isSuccessful())
             return result;
-        if (!(result = validateNickname(nickname)).isSuccessful())
+        if (!(result = validateNickname(app, nickname)).isSuccessful())
             return result;
         Gender gender = changeStringToGender(genderString);
         if (!(result = validateGender(gender)).isSuccessful())
             return result;
         if (password.equals("random") && passwordConfirm.equals("random"))
             return registerRandomPassword(app, username, email, nickname, gender);
-        if (!(result = validatePassword(password)).isSuccessful())
+        if (!(result = validatePassword(app, password)).isSuccessful())
             return result;
         if (!passwordConfirm.equals(password))
             return new Result(false, "Password confirm isn't same as password");
