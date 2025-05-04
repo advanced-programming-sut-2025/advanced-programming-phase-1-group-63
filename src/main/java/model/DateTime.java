@@ -1,6 +1,6 @@
 package main.java.model;
 
-import model.enums.Season;
+import main.java.model.enums.Season;
 
 public class DateTime {
     private Season season;
