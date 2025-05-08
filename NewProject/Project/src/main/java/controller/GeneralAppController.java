@@ -1,11 +1,10 @@
-package main.java.controller;
+package controller;
 
-import main.java.model.App;
-import main.java.model.Result;
-import main.java.model.User;
-import main.java.model.enums.Gender;
-import main.java.model.enums.Menu;
-import main.java.model.regexes.GeneralCommands;
+import model.App;
+import model.Result;
+import model.User;
+import model.enums.Gender;
+import model.enums.Menu;
 
 import java.util.Random;
 

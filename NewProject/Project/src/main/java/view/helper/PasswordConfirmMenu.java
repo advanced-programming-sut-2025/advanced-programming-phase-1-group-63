@@ -1,10 +1,9 @@
-package main.java.view.help;
+package view.helper;
 
-import main.java.controller.help.PasswordConfirmMenuController;
-import main.java.model.App;
-import main.java.model.Result;
-import main.java.model.regexes.PasswordConfirmMenuCommands;
-import main.java.view.AppMenu;
+import controller.help.PasswordConfirmMenuController;
+import model.App;
+import model.Result;
+import view.AppMenu;
 
 public class PasswordConfirmMenu implements AppMenu {
     PasswordConfirmMenuController controller = new PasswordConfirmMenuController();

@@ -1,6 +1,9 @@
 package model.enums;
 
 import model.App;
+import view.AppMenu;
+import view.helper.*;
+import view.main.*;
 
 public enum Menu {
     LOGIN(new LoginMenu()),

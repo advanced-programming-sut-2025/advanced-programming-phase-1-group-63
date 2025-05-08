@@ -1,10 +1,9 @@
-package main.java.view.main;
+package view.main;
 
-import main.java.controller.main.StoreMenuController;
-import main.java.model.App;
-import main.java.model.Result;
-import main.java.model.regexes.GeneralCommands;
-import main.java.view.AppMenu;
+import controller.main.StoreMenuController;
+import model.App;
+import model.Result;
+import view.AppMenu;
 
 import java.util.regex.Matcher;
 

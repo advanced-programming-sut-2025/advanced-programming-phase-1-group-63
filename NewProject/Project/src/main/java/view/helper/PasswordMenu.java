@@ -1,9 +1,9 @@
-package main.java.view.help;
+package view.helper;
 
-import main.java.controller.help.PasswordMenuController;
-import main.java.model.App;
-import main.java.model.Result;
-import main.java.view.AppMenu;
+import controller.help.PasswordMenuController;
+import model.App;
+import model.Result;
+import view.AppMenu;
 
 public class PasswordMenu implements AppMenu {
     PasswordMenuController controller = new PasswordMenuController();

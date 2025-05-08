@@ -1,10 +1,10 @@
-package main.java.controller.help;
+package controller.help;
 
-import main.java.controller.GeneralAppController;
-import main.java.model.App;
-import main.java.model.Result;
-import main.java.model.User;
-import main.java.model.enums.Menu;
+import controller.GeneralAppController;
+import model.App;
+import model.Result;
+import model.User;
+import model.enums.Menu;
 
 public class PasswordConfirmMenuController extends GeneralAppController {
     public Result yes(App app) {
