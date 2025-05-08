@@ -3,6 +3,7 @@ package view.helper;
 import controller.help.SelectMapMenuController;
 import model.App;
 import model.Result;
+import model.regexes.SelectMapMenuCommands;
 import view.AppMenu;
 
 import java.util.regex.Matcher;

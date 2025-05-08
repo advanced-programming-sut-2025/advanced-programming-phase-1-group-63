@@ -3,6 +3,7 @@ package view.helper;
 import controller.help.PasswordConfirmMenuController;
 import model.App;
 import model.Result;
+import model.regexes.PasswordConfirmMenuCommands;
 import view.AppMenu;
 
 public class PasswordConfirmMenu implements AppMenu {
