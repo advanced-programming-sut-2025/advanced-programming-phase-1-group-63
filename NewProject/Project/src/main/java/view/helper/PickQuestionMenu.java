@@ -3,6 +3,7 @@ package view.helper;
 import controller.help.PickQuestionMenuController;
 import model.App;
 import model.Result;
+import model.regexes.PickQuestionMenuCommands;
 import view.AppMenu;
 
 import java.util.regex.Matcher;

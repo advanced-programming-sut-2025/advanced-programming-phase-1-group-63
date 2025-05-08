@@ -5,6 +5,7 @@ import model.Result;
 import model.User;
 import model.enums.Gender;
 import model.enums.Menu;
+import model.regexes.GeneralCommands;
 
 import java.util.Random;
 

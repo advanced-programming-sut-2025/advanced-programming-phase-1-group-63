@@ -3,6 +3,7 @@ package view.main;
 import controller.main.StoreMenuController;
 import model.App;
 import model.Result;
+import model.regexes.GeneralCommands;
 import view.AppMenu;
 
 import java.util.regex.Matcher;

@@ -3,6 +3,8 @@ package view.main;
 import controller.main.MainMenuController;
 import model.App;
 import model.Result;
+import model.regexes.GeneralCommands;
+import model.regexes.MainMenuCommands;
 import view.AppMenu;
 
 import java.util.regex.Matcher;
