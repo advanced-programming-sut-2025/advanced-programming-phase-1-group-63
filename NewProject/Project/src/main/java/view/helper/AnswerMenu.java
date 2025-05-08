@@ -1,9 +1,7 @@
-package main.java.view.help;
+package view.helper;
 
-import controller.help.AnswerMenuController;
 import model.App;
 import model.Result;
-import model.regexes.AnswerMenuCommands;
 import view.AppMenu;
 
 import java.util.regex.Matcher;

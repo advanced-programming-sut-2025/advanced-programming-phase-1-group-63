@@ -1,10 +1,8 @@
-package main.java.view.help;
+package view.helper;
 
-import main.java.controller.help.SelectMapMenuController;
-import main.java.model.App;
-import main.java.model.Result;
-import main.java.model.regexes.SelectMapMenuCommands;
-import main.java.view.AppMenu;
+import model.App;
+import model.Result;
+import view.AppMenu;
 
 import java.util.regex.Matcher;
 
