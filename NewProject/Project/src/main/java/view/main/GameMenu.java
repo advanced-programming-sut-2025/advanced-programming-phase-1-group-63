@@ -1,5 +1,6 @@
 package view.main;
 
+import controller.main.GameMenuController;
 import model.App;
 import model.Result;
 import view.AppMenu;

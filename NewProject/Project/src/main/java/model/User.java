@@ -10,8 +10,8 @@ public class User {
     private String nickname;
     private String email;
     private final Gender gender;
-    private final String question = null;
-    private final String answer = null;
+    private String question = null;
+    private String answer = null;
     private int gameNumber = 0;
     private Game currentGame = null;
     private int bestGameIncome = 0;
@@ -65,8 +65,18 @@ public class User {
         return gender;
     }
 
+    public void setQuestion(String question) {
+        if (this.question == null)
+            this.question = question;
+    }
+
     public String getQuestion() {
         return question;
+    }
+
+    public void setAnswer(String answer) {
+        if (this.answer == null)
+            this.answer = answer;
     }
 
     public String getAnswer() {

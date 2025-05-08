@@ -1,5 +1,6 @@
 package view.helper;
 
+import controller.help.SelectMapMenuController;
 import model.App;
 import model.Result;
 import view.AppMenu;
