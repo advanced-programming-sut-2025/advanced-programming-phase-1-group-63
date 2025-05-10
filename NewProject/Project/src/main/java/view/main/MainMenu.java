@@ -1,11 +1,11 @@
-package main.java.view.main;
+package view.main;
 
-import main.java.controller.main.MainMenuController;
-import main.java.model.App;
-import main.java.model.Result;
-import main.java.model.regexes.GeneralCommands;
-import main.java.model.regexes.MainMenuCommands;
-import main.java.view.AppMenu;
+import controller.main.MainMenuController;
+import model.App;
+import model.Result;
+import model.regexes.GeneralCommands;
+import model.regexes.MainMenuCommands;
+import view.AppMenu;
 
 import java.util.regex.Matcher;
 

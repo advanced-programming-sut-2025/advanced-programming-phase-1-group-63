@@ -1,4 +1,4 @@
-package main.java.view.help;
+package view.helper;
 
 import controller.help.AnswerMenuController;
 import model.App;

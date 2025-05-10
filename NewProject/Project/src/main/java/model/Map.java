@@ -5,5 +5,4 @@ public class Map {
     int height;
     String TypeOfMap;
     String toolsforMap;
-    
 }

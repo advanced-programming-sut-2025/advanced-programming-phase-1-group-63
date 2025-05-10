@@ -1,11 +1,11 @@
-package main.java.controller.main;
+package controller.main;
 
-import main.java.controller.GeneralAppController;
-import main.java.model.App;
-import main.java.model.Result;
-import main.java.model.User;
-import main.java.model.enums.Gender;
-import main.java.model.enums.Menu;
+import controller.GeneralAppController;
+import model.App;
+import model.Result;
+import model.User;
+import model.enums.Gender;
+import model.enums.Menu;
 
 public class LoginMenuController extends GeneralAppController {
     public Result menuEnter(App app, String menuString) {

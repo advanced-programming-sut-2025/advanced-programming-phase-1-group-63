@@ -1,11 +1,11 @@
-package main.java.controller.main;
+package controller.main;
 
-import main.java.controller.GeneralAppController;
-import main.java.model.App;
-import main.java.model.Player;
-import main.java.model.Result;
-import main.java.model.User;
-import main.java.model.enums.Menu;
+import controller.GeneralAppController;
+import model.App;
+import model.Player;
+import model.Result;
+import model.User;
+import model.enums.Menu;
 
 public class MainMenuController extends GeneralAppController {
     public Result menuEnter(App app, String menuString) {
@@ -46,7 +46,7 @@ public class MainMenuController extends GeneralAppController {
         User user1 = findUserByUsername(app, username1);
         User user2 = findUserByUsername(app, username2);
         User user3 = findUserByUsername(app, username3);
-        Player player1 = new Player()
+        Player player0 = new Player(user0);
     }
 
     public Result loadGame(App app) {
