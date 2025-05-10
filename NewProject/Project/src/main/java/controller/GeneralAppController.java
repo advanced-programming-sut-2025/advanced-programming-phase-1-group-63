@@ -9,7 +9,7 @@ import model.regexes.GeneralCommands;
 
 import java.util.Random;
 
-public class GeneralAppController {
+public abstract class GeneralAppController {
     protected Result validateUsername(App app, String username) { // same user ... (loggedIn == same) ... pattern
         User user = findUserByUsername(app, username);
         User thisUser = app.getLoggedInUser();
