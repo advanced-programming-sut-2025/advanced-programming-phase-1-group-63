@@ -1,0 +1,46 @@
+package test.stubs;
+
+import model.App;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class StubApp extends App {
+    private final List<String> messages = new ArrayList<>();
+    private static StubApp instance;
+
+    private StubApp() {
+        super();  
+    }
+
+    public static StubApp getInstance() {
+        if (instance == null) {
+            instance = new StubApp();
+        }
+        instance.clearMessages();
+        return instance;
+    }
+
+    @Override
+    public void println(String msg) {
+        messages.add(msg);
+    }
+
+    @Override
+    public void print(String msg) {
+        messages.add(msg);
+    }
+
+    @Override
+    public void printError(String errorMsg) {
+        messages.add("ERROR: " + errorMsg);
+    }
+
+    public List<String> getMessages() {
+        return Collections.unmodifiableList(messages);
+    }
+
+    public void clearMessages() {
+        messages.clear();
+    }
+}
