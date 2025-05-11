@@ -3,6 +3,9 @@ package controller.main;
 import controller.GeneralAppController;
 import model.Result;
 import model.User;
+import model.enums.TradeType;
+import model.map.Item;
+import model.trade.Trade;
 
 public class TradeMenuController extends GeneralAppController {
     public Result trade (User firstUser, User secondUser, TradeType type, Item item, int amount, int price) {

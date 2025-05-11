@@ -51,7 +51,6 @@ public enum GameMenuCommands implements Command {
     FISHING("fishing -p (?<pole>\\S+)"),
     ARTISAN_USE("artisan use -A (?<artisanName>.+) -I (?<itemName>.+)"),
     ARTISAN_GET("artisan get -A (?<artisanName>.+)"),
-    STORE_MENU("store menu -s (?<store>\\S+)"), // TODO
     SELL_PRODUCT("sell (?<productName>.+)( -n (?<count>\\d+))?"),
     SHOW_FRIENDSHIPS("friendships"),
     TALK("talk -u (?<username>\\S+) -m (<message>.+)"),

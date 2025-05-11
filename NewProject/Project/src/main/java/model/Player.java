@@ -1,6 +1,6 @@
 package model;
 
-import model.Map.Map;
+import model.map.Map;
 
 import java.util.ArrayList;
 

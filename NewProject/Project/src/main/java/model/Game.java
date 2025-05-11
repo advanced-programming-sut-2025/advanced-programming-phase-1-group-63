@@ -1,6 +1,6 @@
 package model;
 
-import model.Map.Map;
+import model.map.Map;
 
 public class Game {
     private final int numberOfPlayers;

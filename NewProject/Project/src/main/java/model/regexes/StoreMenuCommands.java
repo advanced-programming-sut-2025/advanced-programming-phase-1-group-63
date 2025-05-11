@@ -4,7 +4,10 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public enum StoreMenuCommands implements Command {
-    ;
+    WALK("walk -l \\((?<x>\\d+), (?<y>\\d+)\\)"),
+    SHOW_ALL_PRODUCTS("show all products"),
+    SHOW_AVAILABLE_PRODUCTS("show all available products"),
+    PURCHASE("purchase (?<product>.+)( -n (<count>\\d+))?");
 
     private final String regex;
 
