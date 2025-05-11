@@ -1,5 +1,6 @@
 package model;
 
+import model.Map.Map;
 import model.enums.Menu;
 
 import java.util.ArrayList;
