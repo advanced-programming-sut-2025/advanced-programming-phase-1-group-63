@@ -23,11 +23,6 @@ public class MainMenu implements AppMenu {
             return controller.showCurrentMenu();
         if (MainMenuCommands.LOGOUT.getMatcher(command) != null)
             return controller.logout(app);
-        if ((matcher = MainMenuCommands.CREATE_GAME.getMatcher(command)) != null)
-            return controller.createGame(app, matcher.group("username1"), matcher.group("username2"), matcher.group("username3"));
-        if (MainMenuCommands.LOAD_GAME.getMatcher(command) != null)
-            return controller.loadGame(app);
-        else
-            return new Result(false, "Invalid command");
+        return new Result(false, "Invalid command");
     }
 }

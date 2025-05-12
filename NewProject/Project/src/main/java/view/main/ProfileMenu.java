@@ -31,7 +31,6 @@ public class ProfileMenu implements AppMenu {
             return controller.changePassword(app, matcher.group("newPassword"), matcher.group("oldPassword"));
         if (ProfileMenuCommands.USER_INFO.getMatcher(command) != null)
             return controller.userInfo(app);
-        else
-            return new Result(false, "Invalid command");
+        return new Result(false, "Invalid command");
     }
 }
