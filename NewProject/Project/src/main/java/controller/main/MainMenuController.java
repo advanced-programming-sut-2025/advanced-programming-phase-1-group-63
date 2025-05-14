@@ -2,7 +2,6 @@ package controller.main;
 
 import controller.GeneralAppController;
 import model.App;
-import model.Player;
 import model.Result;
 import model.User;
 import model.enums.Menu;
@@ -39,16 +38,5 @@ public class MainMenuController extends GeneralAppController {
         app.setStayLoggedIn(false);
         app.setCurrentMenu(Menu.LOGIN);
         return new Result(true, "User logged out. You are now in login menu.");
-    }
-
-    public Result createGame(App app, String username1, String username2, String username3) {
-        User user0 = app.getLoggedInUser();
-        User user1 = findUserByUsername(app, username1);
-        User user2 = findUserByUsername(app, username2);
-        User user3 = findUserByUsername(app, username3);
-        Player player0 = new Player(user0);
-    }
-
-    public Result loadGame(App app) {
     }
 }

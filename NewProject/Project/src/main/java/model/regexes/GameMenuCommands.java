@@ -4,7 +4,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public enum GameMenuCommands implements Command {
-    ;
+    CREATE_GAME("game new -u (?<username1>\\S+) (?<username2>\\S+)? (?<username3>\\S+)?"),
+    LOAD_GAME("load game");
 
     private final String regex;
 

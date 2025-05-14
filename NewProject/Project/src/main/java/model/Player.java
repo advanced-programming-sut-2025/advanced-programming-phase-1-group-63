@@ -1,5 +1,7 @@
 package model;
 
+import model.map.Map;
+
 import java.util.ArrayList;
 
 public class Player extends User {

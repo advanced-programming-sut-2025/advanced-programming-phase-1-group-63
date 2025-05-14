@@ -18,6 +18,7 @@ public class LoginMenuController extends GeneralAppController {
     }
 
     public Result menuExit(App app) {
+        endApp(app);
         app.setCurrentMenu(Menu.EXIT);
         return new Result(true, "");
     }
@@ -77,5 +78,9 @@ public class LoginMenuController extends GeneralAppController {
         app.setLoggedInUser(user);
         app.setCurrentMenu(Menu.ANSWER);
         return new Result(true, user.getQuestion());
+    }
+
+    private void endApp(App app) {
+        // TODO
     }
 }

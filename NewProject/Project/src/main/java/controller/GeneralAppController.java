@@ -121,6 +121,10 @@ public abstract class GeneralAppController {
                 return Menu.PROFILE;
             case "game":
                 return Menu.GAME;
+            case "store":
+                return Menu.STORE;
+            case "trade":
+                return Menu.TRADE;
             default:
                 return null;
         }

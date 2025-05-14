@@ -14,6 +14,7 @@ public enum Menu {
     MAIN(new MainMenu()),
     SELECT_MAP(new SelectMapMenu()),
     PROFILE(new ProfileMenu()),
+    GAME_MAIN(new GameMainMenu()),
     GAME(new GameMenu()),
     STORE(new StoreMenu()),
     TRADE(new TradeMenu()),

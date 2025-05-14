@@ -1,5 +1,7 @@
 package model;
 
+import model.map.Map;
+
 public class Game {
     private final int numberOfPlayers;
     private final Player[] players;
