@@ -1,6 +1,7 @@
 package model.enums;
 
 import model.App;
+import model.Result;
 import view.AppMenu;
 import view.helper.*;
 import view.main.*;
@@ -26,7 +27,7 @@ public enum Menu {
         this.menu = menu;
     }
 
-    public void check(App app, String command) {
-        this.menu.check(app, command);
+    public Result check(App app, String command) {
+        return this.menu.check(app, command);
     }
 }

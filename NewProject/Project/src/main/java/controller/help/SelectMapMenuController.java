@@ -7,5 +7,6 @@ import model.Result;
 public class SelectMapMenuController extends GeneralAppController {
     public Result mapSelect(App app, String number) {
         // TODO
+        return null;
     }
 }

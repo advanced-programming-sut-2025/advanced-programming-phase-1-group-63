@@ -6,20 +6,21 @@ public class User {
     public static int number = 0;
     private final int ID;
     private String username;
-    private String password;
+    //private String password;
+    private String hashPassword;
     private String nickname;
     private String email;
     private final Gender gender;
     private String question = null;
     private String answer = null;
     private int gameNumber = 0;
-    private Game currentGame = null;
+    //private Game currentGame = null;
     private int bestGameIncome = 0;
 
-    public User(String username, String password, String nickname, String email, Gender gender) {
+    public User(String username, String hashPassword, String nickname, String email, Gender gender) {
         this.ID = ++number;
         this.username = username;
-        this.password = password;
+        this.hashPassword = hashPassword;
         this.nickname = nickname;
         this.email = email;
         this.gender = gender;
@@ -37,12 +38,20 @@ public class User {
         this.username = username;
     }
 
-    public String getPassword() {
+    /* public String getPassword() {
         return password;
     }
 
     public void setPassword(String password) {
         this.password = password;
+    }*/
+
+    public String getHashPassword() {
+        return hashPassword;
+    }
+
+    public void setHashPassword(String hashPassword) {
+        this.hashPassword = hashPassword;
     }
 
     public String getNickname() {
@@ -91,13 +100,13 @@ public class User {
         this.gameNumber = gameNumber;
     }
 
-    public Game getCurrentGame() {
+    /*public Game getCurrentGame() {
         return currentGame;
     }
 
     public void setCurrentGame(Game currentGame) {
         this.currentGame = currentGame;
-    }
+    }*/
 
     public int getBestGameIncome() {
         return bestGameIncome;

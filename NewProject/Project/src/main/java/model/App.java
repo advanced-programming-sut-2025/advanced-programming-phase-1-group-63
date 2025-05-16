@@ -1,29 +1,34 @@
 package model;
 
-import model.map.Map;
+//import model.map.Map;
 import model.enums.Menu;
 
 import java.util.ArrayList;
 
 public class App {
     private final String[] questions;
-    private final Map[] maps;
-    private final Map mainMap;
+    //private final Map[] maps;
+    //private final Map mainMap;
     private ArrayList<User> users = new ArrayList<>();
     private User loggedInUser = null;
     private boolean stayLoggedIn = false;
-    private Game openedGame = null;
+    //private Game openedGame = null;
     private Menu currentMenu = Menu.LOGIN;
     private static App instance;
 
     private App() {
-        String[] questions = new String[20];
-        Map[] maps = new Map[3];
-        Map mainMap = new Map(100, 100);
+        questions = makeQuestions();
+        //Map[] maps = new Map[3];
+        //Map mainMap = new Map(100, 100);
         // TODO
-        this.questions = questions;
-        this.maps = maps;
-        this.mainMap = mainMap;
+        //this.maps = maps;
+        //this.mainMap = mainMap;
+    }
+
+    private String[] makeQuestions() {
+        String[] questions = new String[20];
+        // TODO
+        return questions;
     }
 
     public static App getInstance() {
@@ -37,16 +42,19 @@ public class App {
     }
 
     public String getQuestionsString() {
-        // TODO
+        StringBuilder questionsString = new StringBuilder();
+        for (String question : questions)
+            questionsString.append(question).append("\n");
+        return questionsString.toString();
     }
 
-    public Map[] getMaps() {
+/*    public Map[] getMaps() {
         return maps;
     }
 
     public Map getMainMap() {
         return mainMap;
-    }
+    }*/
 
     public ArrayList<User> getUsers() {
         return users;
@@ -80,13 +88,13 @@ public class App {
         this.stayLoggedIn = stayLoggedIn;
     }
 
-    public Game getOpenedGame() {
+/*    public Game getOpenedGame() {
         return openedGame;
     }
 
     public void setOpenedGame(Game openedGame) {
         this.openedGame = openedGame;
-    }
+    }*/
 
     public Menu getCurrentMenu() {
         return currentMenu;

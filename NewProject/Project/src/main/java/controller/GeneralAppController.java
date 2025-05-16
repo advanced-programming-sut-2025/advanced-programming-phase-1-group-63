@@ -72,7 +72,7 @@ public abstract class GeneralAppController {
 
     protected Result validatePassword(App app, String password) {
         User thisUser = app.getLoggedInUser();
-        if (thisUser != null && password.equals(thisUser.getPassword()))
+        if (thisUser != null && hashPassword(password).equals(thisUser.getHashPassword()))
             return new Result(false, "New password must be different with previous password.");
         if (GeneralCommands.PASSWORD.getMatcher(password) == null)
             return new Result(false, "Password format is incorrect.");

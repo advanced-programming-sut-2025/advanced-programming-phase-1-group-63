@@ -61,14 +61,16 @@ public class ProfileMenuController extends GeneralAppController {
 
     public Result changePassword(App app, String newPassword, String oldPassword) {
         User user = app.getLoggedInUser();
-        if (!oldPassword.equals(user.getPassword()))
+        String hashOldPassword = hashPassword(oldPassword);
+        if (!hashOldPassword.equals(user.getHashPassword()))
             return new Result(false, "Old password is incorrect!");
         Result result = validatePassword(app, newPassword);
         if (!result.isSuccessful())
             return result;
         if (newPassword.equals(oldPassword))
             return new Result(false, "new password does same as old password!");
-        user.setPassword(newPassword);
+        String hashNewPassword = hashPassword(newPassword);
+        user.setHashPassword(hashNewPassword);
         app.setLoggedInUser(user);
         return new Result(true, "Password changed successfully");
     }

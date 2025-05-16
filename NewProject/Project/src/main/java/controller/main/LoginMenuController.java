@@ -44,7 +44,8 @@ public class LoginMenuController extends GeneralAppController {
             return result;
         if (!passwordConfirm.equals(password))
             return new Result(false, "Password confirm isn't same as password");
-        User user = new User(username, password, nickname, email, gender);
+        String hashPassword = hashPassword(password);// convert password to SHA_256
+        User user = new User(username, hashPassword, nickname, email, gender);
         app.addUser(user);
         app.setCurrentMenu(Menu.PICK_QUESTION);
         return new Result(true, "Please select a question : " + app.getQuestionsString());
@@ -53,7 +54,8 @@ public class LoginMenuController extends GeneralAppController {
     private Result registerRandomPassword(App app, String username, String email, String nickname, Gender gender) {
         String password = createPassword();
         app.setCurrentMenu(Menu.PASSWORD_CONFIRM);
-        User user = new User(username, password, nickname, email, gender);
+        String hashPassword = hashPassword(password);
+        User user = new User(username, hashPassword, nickname, email, gender);
         app.addUser(user);
         return new Result(true, "Suggested password : "  + password);
     }
@@ -62,7 +64,8 @@ public class LoginMenuController extends GeneralAppController {
         User user = findUserByUsername(app, username);
         if (user == null)
             return new Result(false, "Username does not exist");
-        if (!password.equals(user.getPassword()))
+        String hashPassword = hashPassword(password);
+        if (!hashPassword.equals(user.getHashPassword()))
             return new Result(false, "Password is incorrect");
         app.setLoggedInUser(user);
         app.setCurrentMenu(Menu.MAIN);

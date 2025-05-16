@@ -6,7 +6,7 @@ import model.enums.Menu;
 
 public class GameMainMenuController extends GeneralAppController { //extends GeneralAppController {
     public Result exitGame(App app) {
-        Game game = app.getOpenedGame();
+        /*Game game = app.getOpenedGame();
         for (Player player : game.getPlayers()) {
             if (player.getIncome() > player.getBestGameIncome())
                 player.setBestGameIncome(player.getIncome());
@@ -16,11 +16,13 @@ public class GameMainMenuController extends GeneralAppController { //extends Gen
         }
         app.setOpenedGame(null);
         app.setCurrentMenu(Menu.GAME);
-        return new Result(true, "Game saved! You are now in game menu!");
+        return new Result(true, "Game saved! You are now in game menu!");*/
+        return null;
     }
 
     public Result deleteGame(App app) {
-        Game game = app.getOpenedGame();
+        // TODO : nazarSanji
+        /*Game game = app.getOpenedGame();
         for (Player player : game.getPlayers()) {
             if (player.getIncome() > player.getBestGameIncome())
                 player.setBestGameIncome(player.getIncome());
@@ -30,14 +32,16 @@ public class GameMainMenuController extends GeneralAppController { //extends Gen
         }
         app.setOpenedGame(null);
         app.setCurrentMenu(Menu.GAME);
-        return new Result(true, "Game deleted! You are now in game menu!");
+        return new Result(true, "Game deleted! You are now in game menu!");*/
+        return null;
     }
 
     public Result nextTurn(App app) {
-        Game game = app.getOpenedGame();
+        /*Game game = app.getOpenedGame();
         game.nextTurn();
         app.setOpenedGame(game);
-        return new Result(true, "turn player: " + game.getTurnPlayer().getUsername());
+        return new Result(true, "turn player: " + game.getTurnPlayer().getUsername());*/
+        return null;
     }
 
     public Result walk(App app, String x, String y) {
@@ -56,44 +60,53 @@ public class GameMainMenuController extends GeneralAppController { //extends Gen
     }
 
     public Result showEnergy(App app) {
-        Player player = app.getOpenedGame().getMainPlayer();
+        /*Player player = app.getOpenedGame().getMainPlayer();
         return new Result(true, "Energy: " + player.getEnergy());
+         */
+        return null;
     }
 
     public Result showTime(App app) {
-        Game game = app.getOpenedGame();
-        return new Result(true, "Time: " + game.getDateTime().getHour() + ":00");
+        /* Game game = app.getOpenedGame();
+        return new Result(true, "Time: " + game.getDateTime().getHour() + ":00");*/
+        return null;
     }
 
     public Result showDate(App app) {
-        Game game = app.getOpenedGame();
-        return new Result(true, "Date: day " + game.getDateTime().getDay() + " of month");
+        /*Game game = app.getOpenedGame();
+        return new Result(true, "Date: day " + game.getDateTime().getDay() + " of month");*/
+        return null;
     }
 
     public Result showDateTime(App app) {
-        Game game = app.getOpenedGame();
+        /*Game game = app.getOpenedGame();
         return new Result(true, "Time: " + game.getDateTime().getHour() + ":00\n" +
-                "Date: day " + game.getDateTime().getDay() + " of month");
+                "Date: day " + game.getDateTime().getDay() + " of month");*/
+        return null;
     }
 
     public Result showWeekDay(App app) {
-        Game game = app.getOpenedGame();
-        return new Result(true, "day \"" + game.getDateTime().getWeekDay() + "\" of week");
+        /*Game game = app.getOpenedGame();
+        return new Result(true, "day \"" + game.getDateTime().getWeekDay() + "\" of week");*/
+        return null;
     }
 
     public Result showSeason(App app) {
-        Game game = app.getOpenedGame();
-        return new Result(true, "Season: " + game.getDateTime().getSeason());
+        /*Game game = app.getOpenedGame();
+        return new Result(true, "Season: " + game.getDateTime().getSeason());*/
+        return null;
     }
 
     public Result showWeather(App app) {
-        Game game = app.getOpenedGame();
-        return new Result(true, "Weather: " + game.getTodayWeather());
+        //Game game = app.getOpenedGame();
+        //return new Result(true, "Weather: " + game.getTodayWeather());
+        return null;
     }
 
     public Result showTomorrowWeather(App app) {
-        Game game = app.getOpenedGame();
-        return new Result(true, "Weather: " + game.getTomorrowWeather());
+        //Game game = app.getOpenedGame();
+        //return new Result(true, "Weather: " + game.getTomorrowWeather());
+        return null;
     }
 
     public Result greenhouseBuild(App app) {
