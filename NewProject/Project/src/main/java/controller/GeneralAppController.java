@@ -112,9 +112,9 @@ public abstract class GeneralAppController {
 
     protected Gender changeStringToGender(String genderString) {
         switch (genderString) {
-            case "Man":
+            case "man":
                 return Gender.Man;
-            case "Woman":
+            case "woman":
                 return Gender.Woman;
             default:
                 return null;

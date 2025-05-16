@@ -8,7 +8,7 @@ import model.User;
 public class PickQuestionMenuController extends GeneralAppController {
     public Result pickQuestion(App app, String numberString, String answer, String answerConfirm) {
         Integer number = changeStringToInteger(numberString);
-        if (number == null || number < 1 || number > 20)
+        if (number == null || number < 1 || number > 4)
             return new Result(false, "Number is invalid! Try again");
         if (!answerConfirm.equals(answer))
             return new Result(false, "Answer confirm does not same as answer! Try again");

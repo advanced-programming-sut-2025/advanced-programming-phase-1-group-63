@@ -26,8 +26,11 @@ public class App {
     }
 
     private String[] makeQuestions() {
-        String[] questions = new String[20];
-        // TODO
+        String[] questions = new String[4];
+        questions[0] = "1. What is the name of your first pet?";
+        questions[1] = "2. What is your country?";
+        questions[2] = "3. ";
+        questions[3] = "4. ";
         return questions;
     }
 

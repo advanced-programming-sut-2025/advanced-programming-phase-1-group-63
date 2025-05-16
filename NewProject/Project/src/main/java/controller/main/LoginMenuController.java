@@ -48,7 +48,7 @@ public class LoginMenuController extends GeneralAppController {
         User user = new User(username, hashPassword, nickname, email, gender);
         app.addUser(user);
         app.setCurrentMenu(Menu.PICK_QUESTION);
-        return new Result(true, "Please select a question : " + app.getQuestionsString());
+        return new Result(true, "Please select a question : \n" + app.getQuestionsString());
     }
 
     private Result registerRandomPassword(App app, String username, String email, String nickname, Gender gender) {
