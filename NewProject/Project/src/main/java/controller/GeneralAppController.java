@@ -6,10 +6,34 @@ import model.User;
 import model.enums.Gender;
 import model.enums.Menu;
 import model.regexes.GeneralCommands;
+import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 import java.util.Random;
 
 public abstract class GeneralAppController {
+    protected String hashPassword(String password) {
+        try {
+            MessageDigest digest = MessageDigest.getInstance("SHA-256");
+            byte[] encodedHash = digest.digest(password.getBytes(StandardCharsets.UTF_8));
+            return bytesToHex(encodedHash);
+        } catch (NoSuchAlgorithmException e) {
+            throw new RuntimeException("SHA-256 algorithm not found!");
+        }
+    }
+    protected String bytesToHex(byte[] hash) {
+        StringBuilder hexString = new StringBuilder(2 * hash.length);
+        for (byte b : hash) {
+            String hex = Integer.toHexString(0xff & b);
+            if (hex.length() == 1)
+                hexString.append('0');
+            hexString.append(hex);
+        }
+        return hexString.toString();
+    }
+
+
     protected Result validateUsername(App app, String username) { // same user ... (loggedIn == same) ... pattern
         User user = findUserByUsername(app, username);
         User thisUser = app.getLoggedInUser();
