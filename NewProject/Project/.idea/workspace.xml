@@ -5,41 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb7a1378-2411-4e60-807d-2aac18898cc1" name="Changes" comment="commit message">
-      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/animals/BarnAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/animals/BarnAnimal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/animals/Building.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/animals/Building.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/animals/animalFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/animals/animalFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/animals/barnBuilding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/animals/barnBuilding.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/animals/barned/Cow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/animals/barned/Cow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/animals/barned/Goat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/animals/barned/Goat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/animals/barned/Pig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/animals/barned/Pig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/animals/barned/Sheep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/animals/barned/Sheep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/animals/caged/Chicken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/animals/caged/Chicken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/animals/caged/CoopAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/animals/caged/CoopAnimal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/animals/caged/Dinosaur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/animals/caged/Dinosaur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/animals/caged/Duck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/animals/caged/Duck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/animals/caged/Rabbit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/animals/caged/Rabbit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/animals/carpenterShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/animals/carpenterShop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/animals/coopBuilding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/animals/coopBuilding.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/animals/fish/Fish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/animals/fish/Fish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/animals/store/carpenterShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/animals/store/carpenterShop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/animals/store/marniesRanch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/animals/store/marniesRanch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/enums/ToolMaterial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/enums/ToolMaterial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/enums/ToolTier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/enums/ToolTier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/enums/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/enums/Weather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/tools/Axe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/tools/Axe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/tools/Backpack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/tools/Backpack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/tools/FishingRod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/tools/FishingRod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/tools/Hoe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/tools/Hoe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/tools/Scythe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/tools/Scythe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/tools/Shears.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/tools/Shears.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/tools/Tool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/tools/Tool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/tools/ToolException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/tools/ToolException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/tools/ToolsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/tools/ToolsManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/tools/TrashCan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/tools/TrashCan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/tools/UpgradeCost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/tools/UpgradeCost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/tools/WateringCan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/tools/WateringCan.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +67,23 @@
       <option name="project" value="LOCAL" />
       <updated>1747380617750</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="commit message">
+      <option name="closed" value="true" />
+      <created>1747382438826</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1747382438826</updated>
+    </task>
+    <task id="LOCAL-00003" summary="commit message">
+      <option name="closed" value="true" />
+      <created>1747382442653</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1747382442653</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

@@ -22,6 +22,7 @@ public abstract class GeneralAppController {
             throw new RuntimeException("SHA-256 algorithm not found!");
         }
     }
+
     protected String bytesToHex(byte[] hash) {
         StringBuilder hexString = new StringBuilder(2 * hash.length);
         for (byte b : hash) {
@@ -32,7 +33,6 @@ public abstract class GeneralAppController {
         }
         return hexString.toString();
     }
-
 
     protected Result validateUsername(App app, String username) { // same user ... (loggedIn == same) ... pattern
         User user = findUserByUsername(app, username);

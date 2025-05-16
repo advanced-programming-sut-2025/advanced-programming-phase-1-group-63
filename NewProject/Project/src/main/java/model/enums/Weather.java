@@ -6,5 +6,19 @@ public enum Weather {
     RAIN,
     STORM,
     OTHER;
+
+    @Override
+    public String toString() {
+        switch (this) {
+            case SUNNY:
+                return "Sunny";
+            case RAIN:
+                return "Rain";
+            case STORM:
+                return "Storm";
+            default:
+                return "Other";
+        }
+    }
 }
 

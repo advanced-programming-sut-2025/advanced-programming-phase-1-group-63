@@ -30,9 +30,11 @@ public class GameMenuController extends GeneralAppController {
 
     public Result createGame(App app, String username1, String username2, String username3) {
         // TODO
+        return null;
     }
 
     public Result loadGame(App app) {
         // TODO
+        return null;
     }
 }
