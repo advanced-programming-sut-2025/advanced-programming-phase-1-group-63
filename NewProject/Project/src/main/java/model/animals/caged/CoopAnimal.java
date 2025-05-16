@@ -1,6 +1,8 @@
 package model.animals.caged;
 
-public abstract class CoopAnimal extends animals.farmAnimal {
+import model.animals.farmanimal.FarmAnimal;
+
+public abstract class CoopAnimal extends FarmAnimal {
     public CoopAnimal(String name) { super(name); }
 
     @Override

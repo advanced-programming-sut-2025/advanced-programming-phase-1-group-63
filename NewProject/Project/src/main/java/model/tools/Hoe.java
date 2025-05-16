@@ -1,20 +1,22 @@
+// model/tools/Hoe.java
 package model.tools;
 
-import model.enums.ToolTier;
+import model.Player;
+import model.Tile;
 import model.enums.Direction;
-// we need to import player and gameMap(MainMap)
-
+import model.enums.ToolTier;
+import model.Map;
 
 public class Hoe extends Tool {
     private final ToolTier tier;
 
-    private Hoe(HoeBuilder builder) {
+    public Hoe(HoeBuilder builder) {
         super(builder);
         this.tier = builder.tier;
     }
 
     @Override
-    public void use(Direction dir, Player player, GameMap map) throws ToolException {
+    public void use(Direction dir, Player player, Map map) throws ToolException {
         Tile tile = map.getAdjacent(player.getPosition(), dir);
         int energy = getEnergyCost(player);
         if (!player.hasEnergy(energy)) throw new ToolException("Not enough energy");
@@ -27,12 +29,17 @@ public class Hoe extends Tool {
     }
 
     @Override
-    protected Tool buildUpgraded(ToolTier tier) {
-        return new HoeBuilder(tier)
+    public void use(Direction dir, Player player, java.util.Map map) throws ToolException {
+
+    }
+
+    @Override
+    protected Tool buildUpgraded(ToolTier newTier) {
+        return new HoeBuilder(newTier)
                 .name(getName())
                 .skill(getSkill())
                 .baseEnergy(baseEnergy)
-                .addTierCost(tier, tierCosts.get(tier))
+                .addTierCost(newTier, tierCosts.get(newTier))
                 .build();
     }
 
@@ -45,7 +52,6 @@ public class Hoe extends Tool {
 
     public static class HoeBuilder extends Builder<HoeBuilder> {
         private final ToolTier tier;
-
         public HoeBuilder(ToolTier tier) { this.tier = tier; }
         @Override protected HoeBuilder self() { return this; }
         @Override public Hoe build() { return new Hoe(this); }

@@ -10,7 +10,7 @@ import model.animals.caged.Duck;
 import model.animals.caged.Rabbit;
 
 public class animalFactory {
-    public static animals.farmAnimal createAnimal(String type, String name) {
+    public static model.animals.farmanimal.FarmAnimal createAnimal(String type, String name) {
         switch (type.toLowerCase()) {
             case "chicken":  return new Chicken(name);
             case "duck":     return new Duck(name);

@@ -1,16 +1,20 @@
+// model/tools/Scythe.java
 package model.tools;
 
-import model.enums.ToolTier;
+import model.Player;
+import model.Tile;
 import model.enums.Direction;
+import model.enums.ToolTier;
 
-import model.tools.ToolException;
-import model.trading.Player;
+import model.Map;
 
 public class Scythe extends Tool {
-    public Scythe(ScytheBuilder builder) { super(builder); }
+    public Scythe(ScytheBuilder builder) {
+        super(builder);
+    }
 
     @Override
-    public void use(Direction dir, Player player, GameMap map) throws ToolException {
+    public void use(Direction dir, Player player, Map map) throws ToolException {
         Tile tile = map.getAdjacent(player.getPosition(), dir);
         int energy = getEnergyCost(player);
         if (!player.hasEnergy(energy)) throw new ToolException("Not enough energy");
@@ -23,14 +27,18 @@ public class Scythe extends Tool {
     }
 
     @Override
+    public void use(Direction dir, Player player, java.util.Map map) throws ToolException {
+
+    }
+
+    @Override
     protected Tool buildUpgraded(ToolTier tier) {
-        // Scythe has no tiers, return same
-        return this;
+        return this;// without upgrade !!!
     }
 
     @Override
     public int getEnergyCost(Player player) {
-        return baseEnergy; // constant
+        return baseEnergy;
     }
 
     public static class ScytheBuilder extends Builder<ScytheBuilder> {
