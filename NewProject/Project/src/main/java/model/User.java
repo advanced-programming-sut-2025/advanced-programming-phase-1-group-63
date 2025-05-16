@@ -6,7 +6,7 @@ public class User {
     public static int number = 0;
     private final int ID;
     private String username;
-    private String password;
+    private String hashPassword;
     private String nickname;
     private String email;
     private final Gender gender;
@@ -16,10 +16,10 @@ public class User {
     private Game currentGame = null;
     private int bestGameIncome = 0;
 
-    public User(String username, String password, String nickname, String email, Gender gender) {
+    public User(String username, String hashPassword, String nickname, String email, Gender gender) {
         this.ID = ++number;
         this.username = username;
-        this.password = password;
+        this.hashPassword = hashPassword;
         this.nickname = nickname;
         this.email = email;
         this.gender = gender;
@@ -37,12 +37,12 @@ public class User {
         this.username = username;
     }
 
-    public String getPassword() {
-        return password;
+    public String gethashPassword() {
+        return hashPassword;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void sethashPassword(String hashPassword) {
+        this.hashPassword = hashPassword;
     }
 
     public String getNickname() {

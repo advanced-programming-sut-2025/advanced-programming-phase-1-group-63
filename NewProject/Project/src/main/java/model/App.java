@@ -1,8 +1,7 @@
-package model;
+package main.java.model;
 
 import model.map.Map;
 import model.enums.Menu;
-
 import java.util.ArrayList;
 
 public class App {

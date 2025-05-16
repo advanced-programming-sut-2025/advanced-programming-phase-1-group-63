@@ -1,10 +1,7 @@
-package animals;
-
-import java.util.*;
-import java.awt.Point;
+package model.animals.farmanimal;
 
 /** Base class for all farm animals */
-public abstract class farmAnimal {
+public abstract class FarmAnimal {
     protected String name;
     protected int happiness;
     protected int friendship;
@@ -12,7 +9,7 @@ public abstract class farmAnimal {
     protected boolean wasPetted;
     protected boolean sleptOutside;
 
-    public farmAnimal(String name) {
+    public FarmAnimal(String name) {
         this.name = name;
         this.friendship = 0;
         this.happiness = 50;
