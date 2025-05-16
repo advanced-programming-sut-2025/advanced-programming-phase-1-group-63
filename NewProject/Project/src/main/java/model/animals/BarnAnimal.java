@@ -1,8 +1,8 @@
 package model.animals;
 
-import animals.farmAnimal;
+import model.animals.farmanimal.FarmAnimal;
 
-public abstract class BarnAnimal extends farmAnimal {
+public abstract class BarnAnimal extends FarmAnimal {
     public BarnAnimal(String name) { super(name); }
 
     @Override

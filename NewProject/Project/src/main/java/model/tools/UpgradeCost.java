@@ -1,3 +1,4 @@
+// model/tools/UpgradeCost.java
 package model.tools;
 
 import java.util.Map;
@@ -11,7 +12,11 @@ public class UpgradeCost {
         this.materials = materials;
     }
 
-    public int getCoins() { return coins; }
-    public Map<String, Integer> getMaterials() { return materials; }
-}
+    public int getCoins() {
+        return coins;
+    }
 
+    public Map<String, Integer> getMaterials() {
+        return materials;
+    }
+}

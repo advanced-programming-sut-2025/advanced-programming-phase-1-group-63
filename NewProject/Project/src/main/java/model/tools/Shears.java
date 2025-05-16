@@ -1,16 +1,20 @@
+// model/tools/Shears.java
 package model.tools;
 
-import model.enums.ToolTier;
+import model.Player;
+import model.Tile;
 import model.enums.Direction;
+import model.enums.ToolTier;
 
-import model.tools.ToolException;
-import model.trading.Player;
+import model.Map;
 
 public class Shears extends Tool {
-    public Shears(ShearsBuilder builder) { super(builder); }
+    public Shears(ShearsBuilder builder) {
+        super(builder);
+    }
 
     @Override
-    public void use(Direction dir, Player player, GameMap map) throws ToolException {
+    public void use(Direction dir, Player player, Map map) throws ToolException {
         Tile tile = map.getAdjacent(player.getPosition(), dir);
         int energy = getEnergyCost(player);
         if (!player.hasEnergy(energy)) throw new ToolException("Not enough energy");
@@ -23,10 +27,19 @@ public class Shears extends Tool {
     }
 
     @Override
-    protected Tool buildUpgraded(ToolTier tier) { return this; }
+    public void use(Direction dir, Player player, java.util.Map map) throws ToolException {
+
+    }
 
     @Override
-    public int getEnergyCost(Player player) { return baseEnergy; }
+    protected Tool buildUpgraded(ToolTier tier) {
+        return this; // ارتقا ندارد
+    }
+
+    @Override
+    public int getEnergyCost(Player player) {
+        return baseEnergy;
+    }
 
     public static class ShearsBuilder extends Builder<ShearsBuilder> {
         @Override protected ShearsBuilder self() { return this; }
