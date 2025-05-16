@@ -15,6 +15,7 @@ public class Player extends User {
     private boolean fainted = false;
     private ArrayList<Craft> crafts = new ArrayList<>();
     private ArrayList<Food> foods = new ArrayList<>();
+    private int income = 0;
 
     public Player(User user) {
         super(user.getUsername(), user.getPassword(), user.getNickname(), user.getEmail(), user.getGender());
@@ -104,5 +105,13 @@ public class Player extends User {
 
     public void setFoods(ArrayList<Food> foods) {
         this.foods = foods;
+    }
+
+    public int getIncome() {
+        return income;
+    }
+
+    public void addIncome(int value) {
+        income += value;
     }
 }

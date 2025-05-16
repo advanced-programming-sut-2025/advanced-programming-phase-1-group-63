@@ -54,4 +54,26 @@ public class DateTime {
     public int getHour() {
         return hour;
     }
+
+    public String getWeekDay() {
+        int number = day%7;
+        switch (number) {
+            case 1:
+                return "saturday";
+            case 2:
+                return "sunday";
+            case 3:
+                return "monday";
+            case 4:
+                return "tuesday";
+            case 5:
+                return "wednesday";
+            case 6:
+                return "thursday";
+            case 0:
+                return "friday";
+            default:
+                return null;
+        }
+    }
 }
